@@ -7,7 +7,7 @@ from religram import app, Command, filterWhitelist
 
 __MODULE__ = "Meme"
 __HELP__ = """
-Reply someone poem with /curse command, bot will reply to that poem with cursed word
+Reply someone message with /curse command, bot will reply to that message with cursed word
 """
 
 @app.on_message(filterWhitelist & filters.command(["curse"], Command))
