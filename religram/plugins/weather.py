@@ -15,7 +15,7 @@ Example: `/wt jakarta`
 
 
 @app.on_message(filterWhitelist & filters.command(["wt"], Command))
-async def start_command(client, message):
+async def weather_command(client, message):
 	if len(message.command) <= 1:
 		await message.reply("Usage: `wt city`")
 		return
